@@ -2,4 +2,4 @@
 
 I'm a Computer Science major and Data Science minor at Creighton University in Omaha, Nebraska.  
 
-[![Nathan's GitHub stats](https://github-readme-stats.vercel.app/api?username=nathanlauder&count_private=true&hide=prs,contribs&show_icons=true&hide_border=true&bg_color=45,60EFFF,00FF87&title_color=000000&text_color=000000&icon_color=000000)](https://github.com/anuraghazra/github-readme-stats)
+[![Nathan's GitHub stats](https://github-readme-stats.vercel.app/api?username=nathanlauder&count_private=true&hide=prs,contribs&show_icons=true&hide_border=true&bg_color=45,00FF87,60EFFF&title_color=000000&text_color=000000&icon_color=000000)](https://github.com/anuraghazra/github-readme-stats)
