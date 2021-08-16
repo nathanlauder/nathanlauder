@@ -1,5 +1,6 @@
 # Nathan Lauder
 
+
 I'm a Software Engineer at GE Healthcare working with NodeJS and Express learning the world of corporate development.  I'm finishing the last year of my Computer Science major and Data Science minor at Creighton University in Omaha, Nebraska.  
 
 My portfolio can be found on my website [nathanlauder.com](https://nathanlauder.com).
