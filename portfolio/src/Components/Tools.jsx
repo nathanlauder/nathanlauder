@@ -29,22 +29,21 @@ const Tools = (props) => {
                         <div className="subTitles">Frameworks</div>
                         <ul>
                             <li><img src="imgs/react.svg" alt="framework logo" id="langLogo"/>ReactJS</li>
-                            {/* <li><img src="imgs/node.svg" alt="framework logo" id="langLogo"/>Express/NodeJS</li> */}
-                            {/* <li><img src="imgs/firebase.png" alt="framework logo" id="langLogo"/>Firebase</li> */}
+                            <li><img src="imgs/node.svg" alt="framework logo" id="langLogo"/>NodeJS</li>
                         </ul>
                         <div className="subTitles">
                             Currently Learning
                         </div>
                         <ul>
-                            <li><img src="imgs/node.svg" alt="framework logo" id="langLogo"/>Express/NodeJS</li>
-                            <li><img src="imgs/firebase.png" alt="framework logo" id="langLogo"/>Firebase</li>
+                            <li><img src="imgs/node.svg" alt="framework logo" id="langLogo"/>ExpressJS</li>
+                            <li><img src="imgs/mongoDB.svg" alt="framework logo" id="langLogo"/>MongoDB</li>
                         </ul>
                         <div className="subTitles">
                             Interests
                         </div>
                         <ul id="interestList">
-                            <li>Frontend Development</li>
-                            <li>Frontend Frameworks</li>
+                            <li>Fullstack Development</li>
+                            <li>API Development</li>
                             <li>Web Design/Programming</li>
                         </ul>
                     </div> 
