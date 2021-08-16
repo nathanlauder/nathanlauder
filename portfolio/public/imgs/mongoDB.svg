@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>imgMongoLogo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="-75.1115997%" y1="45.1929127%" x2="156.774327%" y2="56.9825535%" id="linearGradient-1">
+            <stop stop-color="#999875" offset="23%"></stop>
+            <stop stop-color="#9B9977" offset="56%"></stop>
+            <stop stop-color="#A09F7E" offset="68%"></stop>
+            <stop stop-color="#A9A889" offset="77%"></stop>
+            <stop stop-color="#B7B69A" offset="84%"></stop>
+            <stop stop-color="#C9C7B0" offset="90%"></stop>
+            <stop stop-color="#DEDDCB" offset="95%"></stop>
+            <stop stop-color="#F8F6EB" offset="99%"></stop>
+            <stop stop-color="#FBF9EF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-19.4272827%" y1="1.79486301%" x2="75.9346933%" y2="98.6460616%" id="linearGradient-2">
+            <stop stop-color="#48A547" offset="0%"></stop>
+            <stop stop-color="#3F9143" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-12.412112%" y1="57.3645468%" x2="149.950218%" y2="47.4024931%" id="linearGradient-3">
+            <stop stop-color="#41A247" offset="0%"></stop>
+            <stop stop-color="#4BA74B" offset="35%"></stop>
+            <stop stop-color="#67B554" offset="96%"></stop>
+            <stop stop-color="#69B655" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="imgMongoLogo" fill-rule="nonzero">
+            <g id="MongoDB_Gray_Logo_FullColor_RGB" transform="translate(159.000000, 40.000000)">
+                <path d="M106.820248,431.512 L95.2203306,427.68 C95.2203306,427.68 96.6953719,369.096 75.523719,365 C61.5669421,348.856 77.6721488,-324.52 128.384711,362.688 C128.384711,362.688 111.028926,371.392 107.742149,386.16 C104.455372,400.928 106.820248,431.512 106.820248,431.512 Z" id="Shape" fill="url(#linearGradient-1)"></path>
+                <path d="M113.07314,374.944 C113.07314,374.944 213.864959,308.704 190.248264,171.136 C167.505372,71.192 113.826694,38.336 108.046777,25.792 C101.697686,16.92 95.3004959,1.184 95.3004959,1.184 L99.5893388,279.656 C99.5893388,279.656 90.7230579,364.688 113.07314,374.944 Z" id="Shape" fill="url(#linearGradient-2)"></path>
+                <path d="M89.3281818,378.64 C89.3281818,378.64 -5.2107438,314.288 0.232479339,200.736 C5.67570248,87.184 72.4373554,31.344 85.4401653,21.216 C93.8495041,12.272 94.1942149,8.824 94.8435537,0 C100.743719,12.632 99.7657025,188.688 100.382975,209.264 C102.811983,289.36 95.9418182,363.52 89.3281818,378.64 Z" id="Shape" fill="url(#linearGradient-3)"></path>
+            </g>
+        </g>
+    </g>
+</svg>
