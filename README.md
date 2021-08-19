@@ -1,7 +1,7 @@
 # Nathan Lauder
 
 
-I'm a Software Engineer at ClassTrack working with ReactJS, NodeJS, Express,and API learning the world of startup development.  I'm finishing the last year of my Computer Science major and Data Science minor at Creighton University in Omaha, Nebraska.  
+I'm a Software Engineer at ClassTrack working with ReactJS, NodeJS, Express, and MongoDB learning the world of startup software development.  I'm finishing the last year of my Computer Science major and Data Science minor at Creighton University in Omaha, Nebraska.  
 
 My portfolio can be found on my website [nathanlauder.com](https://nathanlauder.com).
 
