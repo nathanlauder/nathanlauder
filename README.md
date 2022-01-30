@@ -1,5 +1,6 @@
-# Nathan Lauder
+# Welcome! 👋🏼
 
+![Followers](https://img.shields.io/github/followers/nathanlauder?style=for-the-badge)
 
 I'm a Web Developer at DMSi Software working with Go, JS, and React for my last internship as a college student.  I'm finishing the last year of my Computer Science major and Data Science minor at Creighton University in Omaha, Nebraska.
 
