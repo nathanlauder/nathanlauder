@@ -22,7 +22,7 @@ const Container = styled.div `
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 97vh;
+    height: 98vh;
     padding: 1rem;
     background-image: url('imgs/space.jpg');
     background-size: cover;
