@@ -28,6 +28,8 @@
       "comma-dangle": ["error", "never"],
       "eol-last": ["error", "never"],
       "react/no-children-prop": "off",
-      "react/no-unescaped-entities": "off"
+      "react/no-unescaped-entities": "off",
+      "import/no-extraneous-dependencies": "off",
+      "react/jsx-one-expression-per-line": "off"
     }
 }
