@@ -3,22 +3,33 @@ import styled from 'styled-components';
 import SectionTitle from '../Components/SectionTitle';
 import WorkCard from '../Components/WorkCard';
 
-function Experience() {
+const Experience = () => {
   const ExperienceContainer = styled.div`
     margin-left: 4.5rem;
-    text-align: center;
-
+    justify-self: center;
     @media (max-width: 600px) {
       margin-left: 1rem;
     }
   `;
 
+  const WorkCards = styled.div`
+    margin: 0 auto;
+  `;
+
   return (
-    <ExperienceContainer>
+    <ExperienceContainer id="experience">
       <SectionTitle>Experience</SectionTitle>
-      <WorkCard postion="Software Engineer" company="Google" date="May 2020 - Present" description="I am currently working at Google as a Software Engineer. I am currently working on the Google Assistant and Google Home projects." image="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" />
+      <WorkCards>
+        <WorkCard
+          position="Software Engineer Intern"
+          company="DMSi Software"
+          date="Current"
+          description="I am currently working at DMSi as a Software Engineer. I am working in Web Development as we migrate applications."
+          logo="https://www.dmsi.com/wp-content/themes/dmsi/img/dmsi-logo.svg"
+        />
+      </WorkCards>
     </ExperienceContainer>
   );
-}
+};
 
 export default Experience;
