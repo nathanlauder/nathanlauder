@@ -1,102 +1,45 @@
 import styled from 'styled-components';
 import React from 'react';
-// import { AiOutlineHome } from 'react-icons/ai';
-// import { HiCode } from 'react-icons/hi';
-// import { BsPencil } from 'react-icons/bs';
-// import { VscTools } from 'react-icons/vsc';
-// import { RiContactsLine } from 'react-icons/ri';
-// import { FaHardHat } from 'react-icons/fa';
-// import Tooltip dfrom '../Components/Tooltip';
-
-// const iconStyle = {
-//   fontSize: '2.3rem',
-//   color: '#00eef9'
-// };
+import Link from '../Components/Link';
 
 const Navigation = () => (
   <Container>
     <Logo>
-      <a href="https://www.nathanlauder.com">
+      <Link href="https://www.nathanlauder.com">
         <img src="imgs/NLogo.png" alt="Logo" />
-      </a>
+      </Link>
     </Logo>
     <Nav>
-      Soemtig
+      <NavOption>
+        <Link href="#experience" color="#ffd700">Experience</Link>
+      </NavOption>
+      <NavOption>
+        <Link href="#projects" color="#ffd700">Projects</Link>
+      </NavOption>
+      <NavOption>
+        <Link href="#toolkit" color="#ffd700">Tools</Link>
+      </NavOption>
+      <NavOption>
+        <Link href="#education" color="#ffd700">Education</Link>
+      </NavOption>
+      <NavOption>
+        <Link href="#footer" color="#ffd700">Contact</Link>
+      </NavOption>
     </Nav>
-    {/* <Nav>
-      <div id="icons">
-        <div id="icon">
-          <a href="#landing">
-            <AiOutlineHome style={iconStyle} className="icons" role="button" />
-          </a>
-          <Tooltip>Home</Tooltip>
-        </div>
-        <div id="icon">
-          <a href="#experience">
-            <FaHardHat style={iconStyle} className="icons" role="button" />
-          </a>
-          <Tooltip>Experience</Tooltip>
-        </div>
-        <div id="icon">
-          <a href="#projects">
-            <HiCode style={iconStyle} className="icons" role="button" />
-          </a>
-          <Tooltip>Projects</Tooltip>
-        </div>
-        <div id="icon">
-          <a href="#toolkit">
-            <VscTools style={iconStyle} className="icons" role="button" />
-          </a>
-          <Tooltip>Skills</Tooltip>
-        </div>
-        <div id="icon">
-          <a href="#education">
-            <BsPencil style={iconStyle} className="icons" role="button" />
-          </a>
-          <Tooltip>Education</Tooltip>
-        </div>
-      </div>
-    </Nav>
-    <Contact>
-      <div id="icons">
-        <div id="icon">
-          <a href="#footer">
-            <RiContactsLine style={iconStyle} className="icons" role="button" />
-          </a>
-          <Tooltip>Contact me</Tooltip>
-        </div>
-      </div>
-    </Contact> */}
   </Container>
 );
 
 const Container = styled.div`
-    /* display: flex;
-    flex-direction: row;
-    position: fixed;
-    z-index: 3;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 1rem;
-    width: 2.5rem;
-    height: 98vh;
-    background-color: #000;
-    padding: 1rem;
-    border-right: 1pt solid #939393;
-    @media (max-width: 600px) {
-        width: 1rem;
-    } */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
-
     background-color: #000;
 `;
 
 const Logo = styled.div`
     width: 2.3rem;
     margin-left: 3rem;
+    
     img {
       animation: spinLogo 4s infinite ease-in-out;
       width: 100%;
@@ -116,48 +59,27 @@ const Logo = styled.div`
 `;
 
 const Nav = styled.div`
-  /* display: flex;
-  flex-direction: row;
-
-  a {
-    margin: 0.75rem;
-  }
-
-  #icon {
-    position: relative;
-    margin: 1.5rem 0 1.5rem 0;
-
-    :hover {
-      visibility: visible;
-    }
-  }
-
-  @media (max-width: 600px) {
-    .icons {
-        width: 1.9rem;
-    }
-  } */
+  display: flex;
 `;
 
-// const NavOption = styled.div`
+const NavOption = styled.div`
+  padding: 1.5rem 1rem;
 
-// `;
+  :not(:last-child) {
+    border-right: 1px solid #ffd700;
+  }
 
-// const Contact = styled.div`
-//   margin-bottom: 0.7rem;
+  ${Link} {
+    font-size: 1.1rem;
+  }
 
-//   #icon {
-//     position: relative;
-
-//     :hover ${Tooltip} {
-//       visibility: visible;
-//     }
-//   }
-//   @media (max-width: 600px) {
-//     .icons {
-//         width: 1.7rem;
-//     }
-//   }
-// `;
+  :hover {
+    background-color: white;
+    cursor: pointer;
+    ${Link} {
+      color: black;
+    }
+  }
+`;
 
 export default Navigation;
