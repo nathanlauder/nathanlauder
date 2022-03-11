@@ -1,17 +1,17 @@
 import styled from 'styled-components';
 import React from 'react';
-import { AiOutlineHome } from 'react-icons/ai';
-import { HiCode } from 'react-icons/hi';
-import { BsPencil } from 'react-icons/bs';
-import { VscTools } from 'react-icons/vsc';
-import { RiContactsLine } from 'react-icons/ri';
-import { FaHardHat } from 'react-icons/fa';
-import Tooltip from '../Components/Tooltip';
+// import { AiOutlineHome } from 'react-icons/ai';
+// import { HiCode } from 'react-icons/hi';
+// import { BsPencil } from 'react-icons/bs';
+// import { VscTools } from 'react-icons/vsc';
+// import { RiContactsLine } from 'react-icons/ri';
+// import { FaHardHat } from 'react-icons/fa';
+// import Tooltip dfrom '../Components/Tooltip';
 
-const iconStyle = {
-  fontSize: '2.3rem',
-  color: '#00eef9'
-};
+// const iconStyle = {
+//   fontSize: '2.3rem',
+//   color: '#00eef9'
+// };
 
 const Navigation = () => (
   <Container>
@@ -21,6 +21,9 @@ const Navigation = () => (
       </a>
     </Logo>
     <Nav>
+      Soemtig
+    </Nav>
+    {/* <Nav>
       <div id="icons">
         <div id="icon">
           <a href="#landing">
@@ -63,13 +66,13 @@ const Navigation = () => (
           <Tooltip>Contact me</Tooltip>
         </div>
       </div>
-    </Contact>
+    </Contact> */}
   </Container>
 );
 
 const Container = styled.div`
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: row;
     position: fixed;
     z-index: 3;
     justify-content: space-between;
@@ -77,16 +80,23 @@ const Container = styled.div`
     margin-right: 1rem;
     width: 2.5rem;
     height: 98vh;
-    background-color: #0e0e0e;
+    background-color: #000;
     padding: 1rem;
     border-right: 1pt solid #939393;
     @media (max-width: 600px) {
         width: 1rem;
-    }
+    } */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+    background-color: #000;
 `;
 
 const Logo = styled.div`
     width: 2.3rem;
+    margin-left: 3rem;
     img {
       animation: spinLogo 4s infinite ease-in-out;
       width: 100%;
@@ -105,45 +115,49 @@ const Logo = styled.div`
     }
 `;
 
-const Nav = styled.nav`
-    display:flex;
-    flex-direction: column;
-    
-    a {
-      margin: 0.75rem;
-    }
+const Nav = styled.div`
+  /* display: flex;
+  flex-direction: row;
 
-    #icon {
+  a {
+    margin: 0.75rem;
+  }
+
+  #icon {
     position: relative;
     margin: 1.5rem 0 1.5rem 0;
-    
-    :hover ${Tooltip} {
+
+    :hover {
       visibility: visible;
     }
   }
-    
+
   @media (max-width: 600px) {
     .icons {
         width: 1.9rem;
     }
-  }
+  } */
 `;
 
-const Contact = styled.div`
-    margin-bottom: 0.7rem;
+// const NavOption = styled.div`
 
-    #icon {
-    position: relative;
+// `;
 
-    :hover ${Tooltip} {
-      visibility: visible;
-    }
-  }
-  @media (max-width: 600px) {
-    .icons {
-        width: 1.7rem;
-    }
-  }
-`;
+// const Contact = styled.div`
+//   margin-bottom: 0.7rem;
+
+//   #icon {
+//     position: relative;
+
+//     :hover ${Tooltip} {
+//       visibility: visible;
+//     }
+//   }
+//   @media (max-width: 600px) {
+//     .icons {
+//         width: 1.7rem;
+//     }
+//   }
+// `;
 
 export default Navigation;

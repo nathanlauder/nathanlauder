@@ -49,10 +49,12 @@ const LogoContainer = styled.div`
 `;
 
 const Logo = styled.img`
-
+  width: 150px;
 `;
 
-const Date = styled.div``;
+const Date = styled.div`
+  margin-bottom: 1rem;
+`;
 
 const Description = styled.div``;
 

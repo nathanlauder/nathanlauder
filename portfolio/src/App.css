@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 
+:root {
+  --culture: #F5F5F5;
+  --timberwolf: #D6DBD2;
+  --queen: #456990;
+  --midnight: #0A014F;
+  --capri: #30C5FF;
+}
+
 * {
   font-family: 'Comfortaa', cursive;
   font-size: 16px;
@@ -7,7 +15,7 @@
 }
 
 body {
-  background-color: #e2e2e2;
+  background-color: var(--ivory);
   color: #ffffff;
 }
 

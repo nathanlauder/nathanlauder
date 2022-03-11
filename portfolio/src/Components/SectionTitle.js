@@ -6,7 +6,7 @@ const SectionTitle = styled.div`
   letter-spacing: 2px;
   text-align: center;
   margin: 2rem 0;  
-  color: #ff00d4;  
+  color: var(--capri);  
 `;
 
 export default SectionTitle;

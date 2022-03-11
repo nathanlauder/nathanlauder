@@ -8,7 +8,7 @@ import Tooltip from '../Components/Tooltip';
 // aggregate all components of the footer
 const Footer = () => (
   <Container id="footer">
-    <SkewedContainer top="right" bgColor="#252525">
+    <SkewedContainer top="right" bgColor="var(--midnight)">
       <Content id="content">
         <div id="connect">Elsewhere on the Web</div>
         <div id="icons">

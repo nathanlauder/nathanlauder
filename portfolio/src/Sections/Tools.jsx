@@ -9,7 +9,7 @@ const Tools = () => (
     <SkewedContainer
       top="right"
       bottom="right"
-      bgColor="#292929"
+      bgColor="var(--midnight)"
     >
       <SectionTitle>Tools</SectionTitle>
       <ToolBox>
