@@ -14,6 +14,7 @@ const Landing = () => (
       <div id="loop">
         <TextLoop
           children={['student', 'developer', 'problem solver', 'self-learner', 'forward thinker']}
+          id="textLoop"
           interval={5000}
           fade
           springConfig={{
@@ -31,16 +32,46 @@ const Container = styled.div`
   justify-content: space-around;
   align-items: center;
   background-color: #000;
+  margin: 0 1rem;
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+  }
 `;
 
 const Headshot = styled.div`
-    margin: 1rem;
-    width: 40%;
-    img {
-      width: 100%;
-    }
+  margin: 1rem;
+  width: 30%;
+  img {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 50%;
+  }
 `;
 
-const Greeting = styled.div``;
+const Greeting = styled.div`
+  font-size: 2rem;
+  text-align: right;
+
+  #loop div {
+    font-size: 2rem;
+  }
+
+  @media screen and (max-width: 1000px) {
+    font-size: 1.5rem;
+    #loop div {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+`;
 
 export default Landing;
