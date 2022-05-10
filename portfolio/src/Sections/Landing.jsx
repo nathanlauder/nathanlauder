@@ -31,8 +31,8 @@ const Container = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #000;
   margin: 0 1rem;
+  z-index: 1;
 
   @media screen and (max-width: 600px) {
     flex-direction: column;
