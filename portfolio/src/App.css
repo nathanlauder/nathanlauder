@@ -1,11 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 
 :root {
-  --culture: #F5F5F5;
-  --timberwolf: #D6DBD2;
-  --queen: #456990;
-  --midnight: #0A014F;
-  --capri: #30C5FF;
+  --black: #141414;
+  --white: rgb(245, 245, 245);
 }
 
 * {
@@ -15,8 +12,16 @@
 }
 
 body {
-  background-color: #000;
-  color: #ffffff;
+  background-color: var(--white);
+  color: var(--black);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: none !important;
+  }
 }
 
 ::-webkit-scrollbar {
