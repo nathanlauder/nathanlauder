@@ -13,7 +13,7 @@ const Landing = () => (
       I'm Nathan, and I'm a
       <div id="loop">
         <TextLoop
-          children={['student', 'developer', 'problem solver', 'self-learner', 'forward thinker']}
+          children={['developer', 'problem solver', 'self-learner', 'forward thinker']}
           id="textLoop"
           interval={5000}
           fade
