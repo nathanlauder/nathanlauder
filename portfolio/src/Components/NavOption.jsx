@@ -5,7 +5,7 @@ const NavOption = styled.div`
   padding: 1.5rem 1rem;
 
   &:not(:last-child) {
-    border-right: 1.5px solid var(--black);
+    border-right: 2px solid var(--black);
   }
 
   @media screen and (max-width: 800px) {
