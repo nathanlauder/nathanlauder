@@ -6,7 +6,8 @@ import Landing from './Sections/Landing';
 // import Projects from './Sections/Projects';
 // import Tools from './Sections/Tools';
 // import Education from './Sections/Education';
-// import Footer from './Sections/Footer';
+import Timeline from './Sections/Timeline';
+import Footer from './Sections/Footer';
 
 function App() {
   return (
@@ -16,8 +17,9 @@ function App() {
       {/* <Experience />
       <Projects />
       <Tools />
-      <Education />
-      <Footer /> */}
+      <Education /> */}
+      <Timeline />
+      <Footer />
     </div>
   );
 }
