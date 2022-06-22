@@ -8,7 +8,7 @@ import Tooltip from '../Components/Tooltip';
 // aggregate all components of the footer
 const Footer = () => (
   <Container id="footer">
-    <SkewedContainer top="right" bgColor="var(--midnight)">
+    <SkewedContainer top="right" color="white" bgColor="black">
       <Content id="content">
         <div id="connect">Elsewhere on the Web</div>
         <div id="icons">
@@ -42,10 +42,11 @@ const Footer = () => (
   </Container>
 );
 
-const Container = styled.div``;
+const Container = styled.div`
+  color: white;
+`;
 
 const Content = styled.div`
-  margin-left: 4.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
