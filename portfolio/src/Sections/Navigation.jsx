@@ -5,34 +5,6 @@ import HamMenu from '../Components/HamMenu';
 import Nav from '../Components/Nav';
 import NavOption from '../Components/NavOption';
 
-const Navigation = () => (
-  <Container>
-    <Logo>
-      <Link href="https://www.nathanlauder.com">
-        <img src="imgs/NLogo.png" alt="Logo" />
-      </Link>
-    </Logo>
-    <Nav>
-      <NavOption>
-        <Link href="#experience">Experience</Link>
-      </NavOption>
-      <NavOption>
-        <Link href="#projects">Projects</Link>
-      </NavOption>
-      <NavOption>
-        <Link href="#toolkit">Tools</Link>
-      </NavOption>
-      <NavOption>
-        <Link href="#education">Education</Link>
-      </NavOption>
-      <NavOption>
-        <Link href="#footer">Contact</Link>
-      </NavOption>
-    </Nav>
-    <HamMenu />
-  </Container>
-);
-
 const Container = styled.div`
   display: flex;
   justify-content: space-between;
@@ -65,5 +37,36 @@ const Logo = styled.div`
     padding-top: 5px;
   }
 `;
+
+const Navigation = () => (
+  <Container>
+    <Logo>
+      <Link href="https://www.nathanlauder.com">
+        <img src="imgs/NLogo.png" alt="Logo" />
+      </Link>
+    </Logo>
+    <Nav>
+      <NavOption>
+        <Link href="#experience">Experience</Link>
+      </NavOption>
+      <NavOption>
+        <Link href="#projects">Projects</Link>
+      </NavOption>
+      <NavOption>
+        <Link href="#toolkit">Tools</Link>
+      </NavOption>
+      <NavOption>
+        <Link href="#education">Education</Link>
+      </NavOption>
+      <NavOption>
+        <Link href="#history">Timeline</Link>
+      </NavOption>
+      <NavOption>
+        <Link href="#footer">Contact</Link>
+      </NavOption>
+    </Nav>
+    <HamMenu />
+  </Container>
+);
 
 export default Navigation;
