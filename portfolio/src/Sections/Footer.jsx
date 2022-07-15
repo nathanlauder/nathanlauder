@@ -99,7 +99,7 @@ const Content = styled.div`
       font-size: 0.8rem;
     }
     #signature {
-      width: 24%;
+      width: 35%;
     }
   }
 `;
