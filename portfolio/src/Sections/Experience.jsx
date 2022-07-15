@@ -1,37 +1,84 @@
 import React from 'react';
 import styled from 'styled-components';
+import SkewedContainer from 'sc-react';
 import SectionTitle from '../Components/SectionTitle';
-import WorkCard from '../Components/WorkCard';
-import jpmcl from '../imgs/desc.jpeg';
-import ge from '../imgs/meatball.png';
+import colors from '../util/colors';
 
-const Experience = () => {
-  const ExperienceContainer = styled.div`
-    margin-left: 4.5rem;
-    justify-self: center;
-    @media (max-width: 600px) {
-      margin-left: 1rem;
-    }
-  `;
+const ExperienceContainer = styled.div`
+  display: flex;
+  text-align: center;
 
-  const SpotLight = styled.div`
-    margin: 0 auto 2rem auto;
-  `;
+  @media screen and (max-width: 850px) {
+    flex-direction: column;
 
-  const WorkCards = styled.div`
-    display: flex;
-    justify-content: space-evenly;
-  `;
+    /* :first-child {
+      margin-bottom: 15rem;
+    } */
+  }
+`;
 
-  return (
+const WorkContainer = styled.div`
+  background-color: ${({ bgColor }) => bgColor};
+  color: ${({ textColor }) => textColor};
+  width: 50%;
+
+  @media screen and (max-width: 850px) {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+`;
+
+const WorkContainerTitle = styled.div`
+  font-size: 1.3rem;
+  font-weight: bold;
+`;
+
+const PositionTitle = styled.div`
+  margin: 1rem 0;
+  font-size: 1rem;
+`;
+
+const PositionDescription = styled.div`
+  margin: 0 2rem;
+`;
+
+const Experience = () => (
+  <SkewedContainer
+    bgColor={colors.black}
+    top="right"
+    bottom="left"
+    style={{ marginBottom: '1rem' }}
+  >
+    <SectionTitle color={colors.white} margin="1rem">Experience</SectionTitle>
     <ExperienceContainer id="experience">
-      <SectionTitle>Experience</SectionTitle>
-      <SpotLight>
+      <WorkContainer bgColor={colors.black} textColor={colors.white}>
+        <WorkContainerTitle>
+          Current Position
+        </WorkContainerTitle>
+        <PositionTitle>SEP Software Engineer - JPMorgan Chase &amp; Co.</PositionTitle>
+        <PositionDescription>
+          At JPMorgan, I work in the Wholesale Payments department.  I am continuing to use React
+          and learning Java Springboot.
+        </PositionDescription>
+      </WorkContainer>
+      <WorkContainer bgColor={colors.black} textColor={colors.white}>
+        <WorkContainerTitle>
+          Previous Position
+        </WorkContainerTitle>
+        <PositionTitle>Software Engineer Intern - DMSi Software</PositionTitle>
+        <PositionDescription>
+          At DMSi, I worked with a team in an effort to migrate a legacy Windows application
+          to the web.  During this time, I leveraged my knowledge of React while learning a
+          little bit of Go.
+        </PositionDescription>
+      </WorkContainer>
+      {/* <SpotLight>
         <WorkCard
           position="Software Engineer Intern"
           company="DMSi Software"
           date="Current"
-          description="I am currently working at DMSi as a Software Engineer. I am working in Web Development as we migrate applications."
+          description="I am currently working at DMSi as a Software Engineer.
+          I am working in Web Development as we migrate applications."
           logo="https://www.dmsi.com/wp-content/themes/dmsi/img/dmsi-logo.svg"
         />
       </SpotLight>
@@ -40,26 +87,29 @@ const Experience = () => {
           position="Software Engineer"
           company="JPMorgan Chase &amp; Co."
           date="July 2022"
-          description="After graduation, I will be joining JPMC as a Software Engineer in the Software Engineer Program."
+          description="After graduation, I will be joining JPMC as a Software Engineer
+          in the Software Engineer Program."
           logo={jpmcl}
         />
         <WorkCard
           position="Software Engineer Intern"
           company="General Electric Healthcare"
           date="Summer 2021"
-          description="During my second summer at GEHC, I worked as a SWE Intern building a backend integration between portfolio management systems."
+          description="During my second summer at GEHC, I worked as a SWE Intern building
+          a backend integration between portfolio management systems."
           logo={ge}
         />
         <WorkCard
           position="Vulnerability Management Knowledge Lead Intern"
           company="General Electric Healthcare"
           date="Summer 2020"
-          description="During my first summer at GEHC, I was in the Security, Risk, and Compliance team working on the resource Wiki for the ops team and stakeholders."
+          description="During my first summer at GEHC, I was in the Security,
+          Risk, and Compliance team working on the resource Wiki for the ops team and stakeholders."
           logo={ge}
         />
-      </WorkCards>
+      </WorkCards> */}
     </ExperienceContainer>
-  );
-};
+  </SkewedContainer>
+);
 
 export default Experience;
