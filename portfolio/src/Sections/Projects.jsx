@@ -2,108 +2,111 @@ import React from 'react';
 import styled from 'styled-components';
 import SectionTitle from '../Components/SectionTitle';
 
-const Projects = () => (
-  <Container id="projects">
-    <SectionTitle>Projects</SectionTitle>
-    <ProjectContainer>
-      <ProjectCard id="card">
-        <div id="title">
-          4-year Plan &amp; Registration System
-        </div>
-        <div id="projectImage">
-          <img src="imgs/library.jpg" alt="battleship" />
-        </div>
-        <div id="description">
-          A ReactJS PWA built to provide four-year plan support and registration
-          integration to our school for a capstone project.
-        </div>
-      </ProjectCard>
-      <ProjectCard id="card">
-        <div id="title">
-          Mobile Dashboard
-        </div>
-        <div id="projectImage">
-          <img src="imgs/dashboard.png" alt="dashboard" />
-        </div>
-        <div id="description">
-          A mobile dashboard PWA I made for myself using ReactJS &amp; multiple APIs
-        </div>
-      </ProjectCard>
-      <ProjectCard id="card">
-        <div id="title">
-          Battleship Solver
-        </div>
-        <div id="projectImage">
-          <img src="imgs/battleship1.jpg" alt="battleship" />
-        </div>
-        <div id="description">
-          A battleship board solver (the old school newspaper version)
-          which utilizes recursive backtracking to find all possible solutions
-          to a battleship puzzle.
-        </div>
-      </ProjectCard>
-    </ProjectContainer>
-  </Container>
-);
-
 const Container = styled.div`
-  margin-left: 4.5rem;
   margin-bottom: 2rem;
   padding: 1rem;
-  @media (max-width: 600px) {
-    margin-left: 2rem;
-  }
+`;
+
+const ProjectCard = styled.div`
+  background-color: #eeeeee;
+  margin: 1rem auto;
+  width: 18rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 2px solid gray;
+  box-shadow: 2px 2px 4px #a9a9a9;
+  text-align: center;
 `;
 
 const ProjectContainer = styled.div`
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: max-content max-content max-content;
   justify-content: space-evenly;
   
   @media (max-width: 1150px) {
-    #card {
+    ${ProjectCard} {
       width: 15rem;
     }
   }
   @media (max-width: 1050px) {
     grid-template-columns: auto;
-    #card {
+    ${ProjectCard} {
       width: 18rem;
     }
   }
   @media (max-width: 450px) {
-    #card {
-      width: 12rem;
+    ${ProjectCard} {
+      width: 70vw;
     }
   }
 `;
 
-const ProjectCard = styled.div`
-    background-color: #2b2b2b;
-    margin: 1rem auto;
-    width: 18rem;
-    padding: 1rem;
-    border-radius: 1rem;
-    text-align: center;
-    
-    #title {
-      margin: 0 0.5rem 0.5rem 0;
-      font-size: 1.5rem;
-    }
-    #projectImage {
-      margin: 1rem auto;
-      width: 10rem;
-      border-radius: 1rem;
-    }
-    #description {
-      margin: 0.5 0.5rem 0.5rem 0;
-      font-size: 1rem;
-      line-height: 22.5px;
-    }
-    img {
-      border-radius: 0.5rem;
-      width: 100%;
-    }
+const ProjectTitle = styled.div`
+  margin: 0 0.5rem 0.5rem 0;
+  font-size: 1.5rem;
 `;
+
+const ProjectImageContainer = styled.div`
+  margin: 1rem auto;
+  width: 10rem;
+  border-radius: 1rem;
+`;
+
+const ProjectImage = styled.img`
+  border-radius: 0.5rem;
+  width: 100%;
+`;
+
+const ProjectDescription = styled.div`
+  margin: 0.5 0.5rem 0.5rem 0;
+  font-size: 1rem;
+  line-height: 22.5px;
+`;
+
+const Projects = () => (
+  <Container id="projects">
+    <SectionTitle>Projects</SectionTitle>
+    <ProjectContainer>
+      <ProjectCard>
+        <ProjectTitle>
+          TODO &amp; FIXME scanner.
+        </ProjectTitle>
+        <ProjectImageContainer>
+          <ProjectImage src="imgs/battleship1.jpg" alt="battleship" />
+        </ProjectImageContainer>
+        <ProjectDescription>
+          This is something I am working on which
+          scans a project directory for any TODO/FIXME lines and creates
+          a list of all of them within the project.
+        </ProjectDescription>
+      </ProjectCard>
+      <ProjectCard>
+        <ProjectTitle>
+          4-year Plan &amp; Registration System
+        </ProjectTitle>
+        <ProjectImageContainer>
+          <ProjectImage src="imgs/library.jpg" alt="battleship" />
+        </ProjectImageContainer>
+        <ProjectDescription>
+          A ReactJS PWA built to provide four-year planning and registration
+          to colleges to smooth the stress of registration season.
+        </ProjectDescription>
+      </ProjectCard>
+      <ProjectCard>
+        <ProjectTitle>
+          Battleship Solver
+        </ProjectTitle>
+        <ProjectImageContainer>
+          <ProjectImage src="imgs/battleship1.jpg" alt="battleship" />
+        </ProjectImageContainer>
+        <ProjectDescription>
+          A battleship board solver (the old school newspaper version)
+          which utilizes recursive backtracking to find all possible solutions
+          to a battleship puzzle.
+        </ProjectDescription>
+      </ProjectCard>
+    </ProjectContainer>
+  </Container>
+);
 
 export default Projects;
