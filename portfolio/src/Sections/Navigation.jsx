@@ -23,18 +23,19 @@ const Logo = styled.div`
     animation: spinLogo 4s infinite ease-in-out;
     width: 100%;
     @keyframes spinLogo {
-        40% {
+      40% {
         transform: rotate(0deg);
-        }
-        100% {
+      }
+      100% {
         transform: rotate(360deg);
-        }
+      }
     }
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 650px) {
     width: 2rem;
     padding-top: 5px;
+    margin-left: 1rem;
   }
 `;
 

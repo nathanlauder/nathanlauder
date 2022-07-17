@@ -72,7 +72,7 @@ const Projects = () => (
           TODO &amp; FIXME scanner.
         </ProjectTitle>
         <ProjectImageContainer>
-          <ProjectImage src="imgs/battleship1.jpg" alt="battleship" />
+          <ProjectImage src="imgs/github.jpeg" alt="image of code" />
         </ProjectImageContainer>
         <ProjectDescription>
           This is something I am working on which

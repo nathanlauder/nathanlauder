@@ -1,142 +1,171 @@
 import React from 'react';
 import styled from 'styled-components';
-import { SiPerl } from 'react-icons/si';
-import SkewedContainer from 'sc-react';
+
+import { FaNodeJs } from 'react-icons/fa';
+import { GiCamel } from 'react-icons/gi';
+import { RiHtml5Line, RiCss3Line } from 'react-icons/ri';
+import { IoLogoJavascript } from 'react-icons/io';
+import {
+  SiJava,
+  SiR,
+  SiMysql,
+  SiReact,
+  SiExpress,
+  SiMongodb,
+  SiRust
+} from 'react-icons/si';
+import { TbBrandPython } from 'react-icons/tb';
+
 import SectionTitle from '../Components/SectionTitle';
+import Subtitle from '../Components/Subtitle';
 
-const Tools = () => (
-  <Container id="toolkit">
-    <SkewedContainer
-      top="right"
-      bottom="right"
-      bgColor="var(--midnight)"
-    >
-      <SectionTitle>Tools</SectionTitle>
-      <ToolBox>
-        <div id="languages">
-          <div className="subTitles">Languages</div>
-          <ul>
-            <li>
-              <img src="imgs/javascript.svg" alt="language logo" id="langLogo" />
-              Javascript
-            </li>
-            <li>
-              <img src="imgs/html.svg" alt="language logo" id="langLogo" />
-              HTML
-            </li>
-            <li>
-              <img src="imgs/css.svg" alt="language logo" id="langLogo" />
-              CSS
-            </li>
-            <li>
-              <img src="imgs/java.svg" alt="language logo" id="langLogo" />
-              Java
-            </li>
-            <li>
-              <img src="imgs/r.svg" alt="language logo" id="langLogo" />
-              R
-            </li>
-            <li>
-              <img src="imgs/python.svg" alt="language logo" id="langLogo" />
-              Python
-            </li>
-            <li>
-              <img src="imgs/mysql.svg" alt="language logo" id="langLogo" />
-              MySQL/SQL
-            </li>
-            <li>
-              <img src="imgs/scheme.svg" alt="language logo" id="langLogo" />
-              Scheme
-            </li>
-            <li>
-              <SiPerl id="langLogo" size={40} color="white" />
-              Perl
-            </li>
-          </ul>
-        </div>
-        <div id="frameworks">
-          <div className="subTitles">Frameworks</div>
-          <ul>
-            <li>
-              <img src="imgs/react.svg" alt="framework logo" id="langLogo" />
-              ReactJS
-            </li>
-            <li>
-              <img src="imgs/node.svg" alt="framework logo" id="langLogo" />
-              NodeJS
-            </li>
-          </ul>
-          <div className="subTitles">
-            Currently Learning
-          </div>
-          <ul>
-            <li>
-              <img src="imgs/node.svg" alt="framework logo" id="langLogo" />
-              ExpressJS
-            </li>
-            <li>
-              <img src="imgs/mongoDB.svg" alt="framework logo" id="langLogo" />
-              MongoDB
-            </li>
-          </ul>
-          <div className="subTitles">
-            Interests
-          </div>
-          <ul id="interestList">
-            <li>Fullstack Development</li>
-            <li>API Development</li>
-            <li>Web Design/Programming</li>
-          </ul>
-        </div>
-      </ToolBox>
-    </SkewedContainer>
-  </Container>
-);
+const Container = styled.div``;
 
-const Container = styled.div`
-  #sectionTitle {
-    margin-left: 4.5rem;
+const LangList = styled.ul`
+  color: black;
+
+  @media screen and (max-width: 600px) {
+    margin-right: 5rem;
+    margin-left: 1rem;
   }
-  @media (max-width: 600px) {
-    #sectionTitle {
-      margin-left: 1rem;
-    }
+`;
+
+const FrameworkList = styled.ul`
+  @media screen and (max-width: 600px) {
+    margin-left: 1rem;
   }
 `;
 
 const ToolBox = styled.div`
-    text-align: center;
-    display: flex;
-    justify-content: space-evenly;
-    margin-left: 3.5rem;
-    #langTitles {
-      font-size: 1.4rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    #languages, #frameworks {
+      margin: 1rem auto;
     }
-    ul {
-      list-style: none;
-      color: white;
-    }
-    li {
-      margin: 0.8rem 0;
-      display: flex;
-      align-items: center;
-      text-align: left;
-      font-size: 1rem;
-    }
-    #langLogo {
-      margin: 0 1rem 1rem 0;
-      width: 2rem;
-    }
-    #interestList li {
-      margin-bottom: 2rem;
-    }
-    @media (max-width: 600px) {
-      flex-direction: column;
-      margin-left: 2rem;
-      #languages, #frameworks {
-        margin: 1rem auto;
-      }
-    }
+  }
 `;
+
+const Lang = styled.li`
+  margin: 0.8rem 0;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  font-size: 1rem;
+
+  svg {
+    font-size: 1.8rem;
+    margin-right: 0.5rem;
+  }
+`;
+
+const LangLogo = styled.img`
+  margin: 0 1rem 1rem 0;
+  width: 1.2rem;
+`;
+
+const InterestList = styled.ul`
+  margin-left: 1rem;
+
+  li {
+    margin-bottom: 2rem;
+  }
+`;
+
+const Tools = () => (
+  <Container id="toolkit">
+    {/* <SkewedContainer
+      top="right"
+      bottom="right"
+      bgColor={colors.black}
+    > */}
+    <SectionTitle>Tools</SectionTitle>
+    <ToolBox>
+      <div id="languages">
+        <Subtitle>Languages</Subtitle>
+        <LangList>
+          <Lang>
+            <IoLogoJavascript />
+            Javascript
+          </Lang>
+          <Lang>
+            <RiHtml5Line />
+            HTML
+          </Lang>
+          <Lang>
+            <RiCss3Line />
+            CSS
+          </Lang>
+          <Lang>
+            <SiJava />
+            Java
+          </Lang>
+          <Lang>
+            <SiR />
+            R
+          </Lang>
+          <Lang>
+            <TbBrandPython />
+            Python
+          </Lang>
+          <Lang>
+            <SiMysql />
+            MySQL/SQL
+          </Lang>
+          <Lang>
+            <LangLogo src="imgs/lambdaBlack.png" alt="language logo" />
+            Scheme
+          </Lang>
+          <Lang>
+            <GiCamel />
+            Perl
+          </Lang>
+        </LangList>
+      </div>
+      <div id="frameworks">
+        <Subtitle>Frameworks</Subtitle>
+        <FrameworkList>
+          <Lang>
+            <SiReact />
+            ReactJS
+          </Lang>
+          <Lang>
+            <FaNodeJs />
+            NodeJS
+          </Lang>
+          <Lang>
+            <SiExpress />
+            ExpressJS
+          </Lang>
+          <Lang>
+            <SiMongodb />
+            MongoDB
+          </Lang>
+        </FrameworkList>
+        <Subtitle>
+          Learning
+        </Subtitle>
+        <LangList>
+          <Lang>
+            <SiRust />
+            Rust
+          </Lang>
+        </LangList>
+        <Subtitle>
+          Interests
+        </Subtitle>
+        <InterestList>
+          <Lang>API Development</Lang>
+          <Lang>Web Development</Lang>
+          <Lang>Cybersecurity</Lang>
+        </InterestList>
+      </div>
+    </ToolBox>
+    {/* </SkewedContainer> */}
+  </Container>
+);
 
 export default Tools;

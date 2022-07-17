@@ -5,7 +5,6 @@ import { HiOutlineMail } from 'react-icons/hi';
 import SkewedContainer from 'sc-react';
 import Tooltip from '../Components/Tooltip';
 
-// aggregate all components of the footer
 const Footer = () => (
   <Container id="footer">
     <SkewedContainer top="right" color="white" bgColor="black">
