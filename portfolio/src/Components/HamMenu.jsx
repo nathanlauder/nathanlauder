@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import Hamburger from 'hamburger-react';
-// import Nav from './Nav';
 import NavOption from './NavOption';
 import Link from './Link';
+import colors from '../util/colors';
 
 const HamMenu = () => {
-  // eslint-disable-next-line no-unused-vars
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -15,7 +14,11 @@ const HamMenu = () => {
 
   return (
     <Container>
-      <StyledHamburger id="MYHAM" toggled={menuOpen} toggle={setMenuOpen} color="#141414" />
+      <StyledHamburger
+        toggled={menuOpen}
+        toggle={setMenuOpen}
+        color={colors.black}
+      />
 
       {menuOpen && (
         <HamburgerOptions>
@@ -51,11 +54,6 @@ const Container = styled.div`
 const StyledHamburger = styled(Hamburger)`
   position: relative;
   display: none;
-  /* div {
-    @media screen and (min-width: 600px) {
-      display: none !important;
-    }
-  } */
 `;
 
 const HamburgerOptions = styled.div`
