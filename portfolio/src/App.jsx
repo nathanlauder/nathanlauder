@@ -5,7 +5,6 @@ import Landing from './Sections/Landing';
 import Experience from './Sections/Experience';
 import Projects from './Sections/Projects';
 import Tools from './Sections/Tools';
-// import Education from './Sections/Education';
 import History from './Sections/Timeline/History';
 import Footer from './Sections/Footer';
 
@@ -17,7 +16,6 @@ function App() {
       <Experience />
       <Projects />
       <Tools />
-      {/* <Education /> */}
       <History />
       <Footer />
     </div>
