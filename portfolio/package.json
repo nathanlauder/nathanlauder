@@ -14,7 +14,7 @@
     "react-scripts": "^5.0.0",
     "react-text-loop-next": "^0.0.3",
     "sc-react": "^0.1.7",
-    "styled-components": "^5.3.0",
+    "styled-components": "^5.3.5",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
