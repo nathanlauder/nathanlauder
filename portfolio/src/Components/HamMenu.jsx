@@ -1,52 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import Hamburger from 'hamburger-react';
 import NavOption from './NavOption';
 import Link from './Link';
 import colors from '../util/colors';
 
-const HamMenu = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  useEffect(() => {
-    console.log(menuOpen);
-  }, [menuOpen]);
-
-  return (
-    <Container>
-      <StyledHamburger
-        toggled={menuOpen}
-        toggle={setMenuOpen}
-        color={colors.black}
-      />
-
-      {menuOpen && (
-        <HamburgerOptions>
-          <HamNav>
-            <NavOption>
-              <Link href="#experience">Experience</Link>
-            </NavOption>
-            <NavOption>
-              <Link href="#projects">Projects</Link>
-            </NavOption>
-            <NavOption>
-              <Link href="#toolkit">Tools</Link>
-            </NavOption>
-            <NavOption>
-              <Link href="#education">Education</Link>
-            </NavOption>
-            <NavOption>
-              <Link href="#footer">Contact</Link>
-            </NavOption>
-          </HamNav>
-        </HamburgerOptions>
-      )}
-    </Container>
-  );
-};
-
 const Container = styled.div`
-  @media screen and (min-width: 600px) {
+  z-index: 1;
+  @media screen and (min-width: 641px) {
     display: none !important;
   }
 `;
@@ -72,7 +33,7 @@ const HamNav = styled.div`
 
   ${NavOption} {
     border: none;
-    padding: 1rem 1.5rem;
+    padding: 1rem 2.5rem 1rem 1rem;
   }
 
   @keyframes slide {
@@ -86,5 +47,43 @@ const HamNav = styled.div`
     }
   }
 `;
+
+const HamMenu = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const closeMenu = () => setMenuOpen(false);
+
+  return (
+    <Container>
+      <StyledHamburger
+        toggled={menuOpen}
+        toggle={setMenuOpen}
+        color={colors.black}
+      />
+      {menuOpen && (
+        <HamburgerOptions>
+          <HamNav>
+            <Link href="#experience" onClick={() => closeMenu()}>
+              <NavOption>Experience</NavOption>
+            </Link>
+            <Link href="#projects" onClick={() => closeMenu()}>
+              <NavOption>Projects</NavOption>
+            </Link>
+            <Link href="#tools" onClick={() => closeMenu()}>
+              <NavOption>Tools</NavOption>
+            </Link>
+
+            <Link href="#timeline" onClick={() => closeMenu()}>
+              <NavOption>History</NavOption>
+            </Link>
+            <Link href="#footer" onClick={() => closeMenu()}>
+              <NavOption>Contact</NavOption>
+            </Link>
+          </HamNav>
+        </HamburgerOptions>
+      )}
+    </Container>
+  );
+};
 
 export default HamMenu;
