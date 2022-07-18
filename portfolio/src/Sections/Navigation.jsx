@@ -34,7 +34,7 @@ const Logo = styled.div`
 
   @media screen and (max-width: 650px) {
     width: 2rem;
-    padding-top: 5px;
+    padding-top: 6px;
     margin-left: 1rem;
   }
 `;
@@ -47,24 +47,21 @@ const Navigation = () => (
       </Link>
     </Logo>
     <Nav>
-      <NavOption>
-        <Link href="#experience">Experience</Link>
-      </NavOption>
-      <NavOption>
-        <Link href="#projects">Projects</Link>
-      </NavOption>
-      <NavOption>
-        <Link href="#toolkit">Tools</Link>
-      </NavOption>
-      <NavOption>
-        <Link href="#education">Education</Link>
-      </NavOption>
-      <NavOption>
-        <Link href="#history">Timeline</Link>
-      </NavOption>
-      <NavOption>
-        <Link href="#footer">Contact</Link>
-      </NavOption>
+      <Link href="#experience">
+        <NavOption>Experience</NavOption>
+      </Link>
+      <Link href="#projects">
+        <NavOption>Projects</NavOption>
+      </Link>
+      <Link href="#tools">
+        <NavOption>Tools</NavOption>
+      </Link>
+      <Link href="#timeline">
+        <NavOption>History</NavOption>
+      </Link>
+      <Link href="#footer">
+        <NavOption>Contact</NavOption>
+      </Link>
     </Nav>
     <HamMenu />
   </Container>
