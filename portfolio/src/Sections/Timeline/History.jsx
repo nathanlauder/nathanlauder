@@ -15,13 +15,13 @@ const Container = styled.div`
 `;
 
 const History = () => (
-  <Container id="history">
+  <Container id="timeline">
     <SectionTitle>
       Portfolio History
     </SectionTitle>
 
     <TimeLine>
-      <LineEvent side="left" title="Release Version 2.0">
+      <LineEvent side="left" title="Release Version 2.0" date="July, 2022">
         <Description>
           This is the current version on my website.  It reflects a grayscale color scheme
           to keep things simple on the eyes yet advanced and functional.
