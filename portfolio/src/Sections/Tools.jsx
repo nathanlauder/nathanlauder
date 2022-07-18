@@ -30,9 +30,26 @@ const LangList = styled.ul`
   }
 `;
 
+const Lang = styled.li`
+  margin: 0.8rem 0;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  font-size: 1rem;
+
+  svg {
+    font-size: 1.8rem;
+    margin-right: 0.5rem;
+  }
+`;
+
 const FrameworkList = styled.ul`
   @media screen and (max-width: 600px) {
     margin-left: 1rem;
+
+    ${Lang} {
+      margin-right: 6rem;
+    }
   }
 `;
 
@@ -46,19 +63,6 @@ const ToolBox = styled.div`
     #languages, #frameworks {
       margin: 1rem auto;
     }
-  }
-`;
-
-const Lang = styled.li`
-  margin: 0.8rem 0;
-  display: flex;
-  align-items: center;
-  text-align: left;
-  font-size: 1rem;
-
-  svg {
-    font-size: 1.8rem;
-    margin-right: 0.5rem;
   }
 `;
 
@@ -76,12 +80,7 @@ const InterestList = styled.ul`
 `;
 
 const Tools = () => (
-  <Container id="toolkit">
-    {/* <SkewedContainer
-      top="right"
-      bottom="right"
-      bgColor={colors.black}
-    > */}
+  <Container id="tools">
     <SectionTitle>Tools</SectionTitle>
     <ToolBox>
       <div id="languages">
@@ -164,7 +163,6 @@ const Tools = () => (
         </InterestList>
       </div>
     </ToolBox>
-    {/* </SkewedContainer> */}
   </Container>
 );
 
