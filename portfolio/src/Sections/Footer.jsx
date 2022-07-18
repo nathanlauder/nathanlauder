@@ -87,7 +87,6 @@ const Content = styled.div`
       
   }
   @media (max-width: 600px) {
-    margin-left: 2rem;
     #connect {
       font-size: 1.3rem;
     }
