@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 
+:root {
+  --black: #141414;
+  --white: #f5f5f5;
+}
+
 * {
   font-family: 'Comfortaa', cursive;
   font-size: 16px;
@@ -7,34 +12,16 @@
 }
 
 body {
-  background-color: #e2e2e2;
-  color: #ffffff;
+  background-color: var(--white);
+  color: var(--black);
 }
 
-#sectionTitle {
-  font-size: 2rem;
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-align: center;
-  margin: 2rem 0;  
-  color: #ff00d4;  
-}
-
-.subTitles {
-  border-bottom: 2px solid transparent;
-  border-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
-  border-image-slice: 1;
-  padding: 10px;
-  font-size: 1.3rem;
-}
-
-.subTitleDark {
-  border-bottom: 2px solid transparent;
-  border-image: linear-gradient(to right, rgba(1, 1, 1, 0), rgba(1, 1, 1, 1), rgba(1, 1, 1, 0));
-  border-image-slice: 1;
-  padding: 10px;
-  width: 15rem;
-  margin: 0 auto;
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: none !important;
+  }
 }
 
 ::-webkit-scrollbar {

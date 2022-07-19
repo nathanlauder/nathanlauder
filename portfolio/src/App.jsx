@@ -1,20 +1,22 @@
 import React from 'react';
 import './App.css';
-import Navigation from './Components/Navigation';
-import Landing from './Components/Landing';
-import Projects from './Components/Projects';
-import Tools from './Components/Tools';
-import Education from './Components/Education';
-import Footer from './Components/Footer';
+import Navigation from './Sections/Navigation';
+import Landing from './Sections/Landing';
+import Experience from './Sections/Experience';
+import Projects from './Sections/Projects';
+import Tools from './Sections/Tools';
+import History from './Sections/Timeline/History';
+import Footer from './Sections/Footer';
 
 function App() {
   return (
     <div id="app">
       <Navigation />
       <Landing />
+      <Experience />
       <Projects />
       <Tools />
-      <Education />
+      <History />
       <Footer />
     </div>
   );
