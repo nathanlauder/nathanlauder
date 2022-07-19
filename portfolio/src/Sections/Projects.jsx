@@ -23,18 +23,18 @@ const ProjectContainer = styled.div`
   grid-template-columns: max-content max-content max-content;
   justify-content: space-evenly;
   
-  @media (max-width: 1150px) {
+  @media screen and (max-width: 1150px) {
     ${ProjectCard} {
       width: 15rem;
     }
   }
-  @media (max-width: 1050px) {
+  @media screen and (max-width: 1050px) {
     grid-template-columns: auto;
     ${ProjectCard} {
       width: 18rem;
     }
   }
-  @media (max-width: 450px) {
+  @media screen and (max-width: 450px) {
     ${ProjectCard} {
       width: 70vw;
     }

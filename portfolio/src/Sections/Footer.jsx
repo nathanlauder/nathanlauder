@@ -63,7 +63,7 @@ const Content = styled.div`
   flex-direction: column;
   justify-content: space-between;
 
-  @media (max-width: 600px) {
+  @media screen and (max-width: 600px) {
     ${Connect} {
       font-size: 1.3rem;
     }
