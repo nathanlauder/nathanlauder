@@ -53,6 +53,9 @@ const FrameworkList = styled.ul`
   }
 `;
 
+const Languages = styled.div``;
+const Frameworks = styled.div``;
+
 const ToolBox = styled.div`
   text-align: center;
   display: flex;
@@ -60,7 +63,7 @@ const ToolBox = styled.div`
   
   @media screen and (max-width: 600px) {
     flex-direction: column;
-    #languages, #frameworks {
+    ${Languages}, ${Frameworks} {
       margin: 1rem auto;
     }
   }
@@ -83,7 +86,7 @@ const Tools = () => (
   <Container id="tools">
     <SectionTitle>Tools</SectionTitle>
     <ToolBox>
-      <div id="languages">
+      <Languages>
         <Subtitle>Languages</Subtitle>
         <LangList>
           <Lang>
@@ -123,8 +126,8 @@ const Tools = () => (
             Perl
           </Lang>
         </LangList>
-      </div>
-      <div id="frameworks">
+      </Languages>
+      <Frameworks>
         <Subtitle>Frameworks</Subtitle>
         <FrameworkList>
           <Lang>
@@ -161,7 +164,7 @@ const Tools = () => (
           <Lang>Web Development</Lang>
           <Lang>Cybersecurity</Lang>
         </InterestList>
-      </div>
+      </Frameworks>
     </ToolBox>
   </Container>
 );
