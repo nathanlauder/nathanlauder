@@ -4,6 +4,8 @@ import SkewedContainer from 'sc-react';
 import SectionTitle from '../Components/SectionTitle';
 import colors from '../util/colors';
 
+const Wrapper = styled.div``;
+
 const ExperienceContainer = styled.div`
   display: flex;
   text-align: center;
@@ -40,7 +42,7 @@ const PositionDescription = styled.div`
 `;
 
 const Experience = () => (
-  <div id="experience">
+  <Wrapper id="experience">
     <SkewedContainer
       bgColor={colors.black}
       top="right"
@@ -53,10 +55,10 @@ const Experience = () => (
           <WorkContainerTitle>
             Current Position
           </WorkContainerTitle>
-          <PositionTitle>SEP Software Engineer - JPMorgan Chase &amp; Co.</PositionTitle>
+          <PositionTitle>Software Engineer - JPMorgan Chase &amp; Co.</PositionTitle>
           <PositionDescription>
-            At JPMorgan, I work in the Wholesale Payments department.  I am continuing to use React
-            and learning Java Springboot.
+            At JPMorgan Chase, I work in Cooporate and Investment Banking aiding in the upkeep
+            of software.
           </PositionDescription>
         </WorkContainer>
         <WorkContainer bgColor={colors.black} textColor={colors.white}>
@@ -72,7 +74,7 @@ const Experience = () => (
         </WorkContainer>
       </ExperienceContainer>
     </SkewedContainer>
-  </div>
+  </Wrapper>
 );
 
 export default Experience;
