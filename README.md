@@ -1,9 +1,6 @@
 Hey 👋🏼 I'm Nathan
 =======================
 
-I'm a Web Dev
--------------
-
 I am a Software Engineer working on modernization efforts at JPMorgan Chase
 
 * 🖥️  See my portfolio at [nathanlauder.com](http://nathanlauder.com)
