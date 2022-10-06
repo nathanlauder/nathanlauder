@@ -40,7 +40,3 @@ src="https://img.shields.io/github/followers/nathanlauder?logo=github&style=for-
 <a href="http://www.github.com/nathanlauder"><img src="https://github-readme-stats.vercel.app/api?username=nathanlauder&show_icons=true&hide=stars,issues,&count_private=true&title_color=00c7ef&show_icons=true&hide_border=true&bg_color=45,7300DF,D60081&ffffff=000000&text_color=ffffff&icon_color=ffffff" alt="nathanlauder's GitHub stats" /></a>
 
 <a href="https://github.com/nathanlauder" align="left"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nathanlauder&langs_count=8&title_color=00c7ef&text_color=ffffff&icon_color=ec4899&bg_color=45,7300DF,D60081&ffffff&hide_border=true&locale=en&custom_title=Top%20%Languages&layout=compact&exclude_repo=dots,SoftwareEngineering,NALPWA00,PWA00NAL,Travlr,Reef,Covid-19-Grapher,nathanlauder.github.io" alt="Top Languages" /></a>
-
-<a href="http://www.github.com/nathanlauder"><img src="https://github-readme-streak-stats.herokuapp.com/?user=nathanlauder&stroke=ffffff&background=6e0089&ring=D60081&fire=D60081&currStreakNum=ffffff&currStreakLabel=ffffff&sideNums=ffffff&sideLabels=ffffff&dates=ffffff&hide_border=true" /></a>
-
-<a href="http://www.github.com/nathanlauder"><img src="https://activity-graph.herokuapp.com/graph?username=nathanlauder&bg_color=00107c&color=ffffff&line=ec4899&point=ffffff&area_color=0f172a&area=true&hide_border=true&custom_title=GitHub%20Commits%20Graph" alt="GitHub Commits Graph" /></a>
