@@ -4,9 +4,7 @@ Hey 👋🏼 I'm Nathan
 I'm a Web Dev
 -------------
 
-I started CS as a sophomore in college with my first class in Python. Fast forward 2 years and a few internships, and I have loved learning React and Node to develop JS web apps. I have also found out the amazingness that is developing an API through Express and interacting with NoSQL DBs like Mongo. Gotta love tech 😊
-
-I'm currently enjoying my last summer before beginning my career as a Software Engineer at JPMorgan Chase.
+I am a Software Engineer working on modernization efforts at JPMorgan Chase
 
 * 🖥️  See my portfolio at [nathanlauder.com](http://nathanlauder.com)
 * 🧠  I'm learning Rust
