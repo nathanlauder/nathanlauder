@@ -21,10 +21,10 @@ const Landing = () => (
             damping: 10
           }}
         >
-          <span>developer</span>
-          <span>problem solver</span>
-          <span>self-learner</span>
-          <span>forward thinker</span>
+          <div>developer</div>
+          <div>problem solver</div>
+          <div>self-learner</div>
+          <div>forward thinker</div>
         </TextLoop>
       </div>
     </Greeting>
@@ -61,7 +61,7 @@ const Greeting = styled.div`
   font-size: 2rem;
   text-align: right;
 
-  #loop span {
+  #loop div {
     font-size: 2rem;
   }
 
