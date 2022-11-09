@@ -13,7 +13,6 @@ const Landing = () => (
       I'm Nathan, and I'm a
       <div id="loop">
         <TextLoop
-          children={['developer', 'problem solver', 'self-learner', 'forward thinker']}
           id="textLoop"
           interval={5000}
           fade
@@ -21,7 +20,12 @@ const Landing = () => (
             stiffness: 100,
             damping: 10
           }}
-        />
+        >
+          <span>developer</span>
+          <span>problem solver</span>
+          <span>self-learner</span>
+          <span>forward thinker</span>
+        </TextLoop>
       </div>
     </Greeting>
   </Container>
@@ -57,7 +61,7 @@ const Greeting = styled.div`
   font-size: 2rem;
   text-align: right;
 
-  #loop div {
+  #loop span {
     font-size: 2rem;
   }
 
