@@ -7,12 +7,12 @@ const Nav = styled.div`
   ${Link} {
     &:not(:last-child) {
       border-right: 2px solid var(--black);
-    }
 
-    &:hover {
-      border-right: none;
+      &:hover {
+        border-right: 2px solid white;
+      }
     }
-
+    
     font-size: 1.1rem;
     font-weight: 700;
     letter-spacing: 1px;
