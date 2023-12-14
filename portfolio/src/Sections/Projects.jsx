@@ -8,13 +8,13 @@ const Container = styled.div`
 `;
 
 const ProjectCard = styled.div`
-  background-color: #eeeeee;
+  background-color: var(--navy);
   margin: 1rem auto;
   width: 18rem;
   padding: 1rem;
   border-radius: 0.5rem;
   border: 2px solid gray;
-  box-shadow: 2px 2px 4px #a9a9a9;
+  /* box-shadow: 2px 2px 4px #a9a9a9; */
   text-align: center;
 `;
 
@@ -94,15 +94,15 @@ const Projects = () => (
       </ProjectCard>
       <ProjectCard>
         <ProjectTitle>
-          Battleship Solver
+          Go URL Shortener
         </ProjectTitle>
         <ProjectImageContainer>
-          <ProjectImage src="imgs/battleship1.jpg" alt="battleship" />
+          <ProjectImage src="imgs/url-shortener.png" alt="Url Shortener UI" />
         </ProjectImageContainer>
         <ProjectDescription>
-          A battleship board solver (the old school newspaper version)
-          which utilizes recursive backtracking to find all possible solutions
-          to a battleship puzzle.
+          This is a project I collaborated with a fellow engineer on, and we made a highly
+          efficient URL shortener using FastHTTP and Golang. This shortener processed over
+          50,000 requests per second, and features a very simple React UI.
         </ProjectDescription>
       </ProjectCard>
     </ProjectContainer>

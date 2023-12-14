@@ -1,17 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { FaNodeJs } from 'react-icons/fa';
-import { GiCamel } from 'react-icons/gi';
-import { RiHtml5Line, RiCss3Line } from 'react-icons/ri';
+import { BiLogoGoLang, BiLogoTypescript } from 'react-icons/bi';
+import { DiMysql } from 'react-icons/di';
+import { FaJava, FaNodeJs } from 'react-icons/fa';
 import { IoLogoJavascript } from 'react-icons/io';
+import { RiCss3Line, RiHtml5Line } from 'react-icons/ri';
 import {
-  SiJava,
-  SiR,
-  SiMysql,
-  SiReact,
   SiExpress,
+  SiGraphql,
   SiMongodb,
+  SiR,
+  SiReact,
   SiRust
 } from 'react-icons/si';
 import { TbBrandPython } from 'react-icons/tb';
@@ -22,8 +22,6 @@ import Subtitle from '../Components/Subtitle';
 const Container = styled.div``;
 
 const LangList = styled.ul`
-  color: black;
-
   @media screen and (max-width: 600px) {
     margin-right: 5rem;
     margin-left: 1rem;
@@ -69,13 +67,13 @@ const ToolBox = styled.div`
   }
 `;
 
-const LangLogo = styled.img`
-  margin: 0 1rem 1rem 0;
-  width: 1.2rem;
-`;
+// const LangLogo = styled.img`
+//   margin: 0 1rem 1rem 0;
+//   width: 1.2rem;
+// `;
 
 const InterestList = styled.ul`
-  margin-left: 1rem;
+  margin-left: 0.5rem;
 
   li {
     margin-bottom: 2rem;
@@ -91,7 +89,27 @@ const Tools = () => (
         <LangList>
           <Lang>
             <IoLogoJavascript />
-            Javascript
+            JavaScript
+          </Lang>
+          <Lang>
+            <BiLogoTypescript />
+            TypeScript
+          </Lang>
+          <Lang>
+            <FaJava />
+            Java
+          </Lang>
+          <Lang>
+            <SiRust />
+            Rust
+          </Lang>
+          <Lang>
+            <BiLogoGoLang />
+            Go
+          </Lang>
+          <Lang>
+            <TbBrandPython />
+            Python
           </Lang>
           <Lang>
             <RiHtml5Line />
@@ -102,33 +120,13 @@ const Tools = () => (
             CSS
           </Lang>
           <Lang>
-            <SiJava />
-            Java
-          </Lang>
-          <Lang>
             <SiR />
             R
-          </Lang>
-          <Lang>
-            <TbBrandPython />
-            Python
-          </Lang>
-          <Lang>
-            <SiMysql />
-            MySQL/SQL
-          </Lang>
-          <Lang>
-            <LangLogo src="imgs/lambdaBlack.png" alt="language logo" />
-            Scheme
-          </Lang>
-          <Lang>
-            <GiCamel />
-            Perl
           </Lang>
         </LangList>
       </Languages>
       <Frameworks>
-        <Subtitle>Frameworks</Subtitle>
+        <Subtitle>Frameworks & DBs</Subtitle>
         <FrameworkList>
           <Lang>
             <SiReact />
@@ -146,16 +144,15 @@ const Tools = () => (
             <SiMongodb />
             MongoDB
           </Lang>
-        </FrameworkList>
-        <Subtitle>
-          Learning
-        </Subtitle>
-        <LangList>
           <Lang>
-            <SiRust />
-            Rust
+            <DiMysql />
+            MySQL/SQL
           </Lang>
-        </LangList>
+          <Lang>
+            <SiGraphql />
+            GraphQL
+          </Lang>
+        </FrameworkList>
         <Subtitle>
           Interests
         </Subtitle>

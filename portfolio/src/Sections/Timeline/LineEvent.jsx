@@ -1,5 +1,5 @@
-import React from 'react';
 import PropTypes from 'prop-types';
+import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
@@ -20,8 +20,8 @@ const Container = styled.div`
     width: 20px;
     height: 20px;
     left: ${({ side }) => (side === 'left' ? `calc(100% + 27px)` : `calc(0% - 53px)`)};
-    background-color: #e4e4e4;
-    border: 4px solid #000000;
+    background-color: var(--navy);
+    border: 4px solid var(--white);
     top: 15px;
     border-radius: 50%;
     z-index: 1;
@@ -81,6 +81,10 @@ const Date = styled.div`
 const Description = styled.div`
   letter-spacing: 0.5px;
   font-size: 1.1rem;
+
+  #hereLink {
+    text-decoration: underline;
+  }
 `;
 
 const LineEvent = ({

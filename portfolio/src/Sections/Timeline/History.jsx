@@ -19,12 +19,25 @@ const History = () => (
     <SectionTitle>
       Portfolio History
     </SectionTitle>
-
     <TimeLine>
-      <LineEvent side="left" title="Release Version 2.0" date="July, 2022">
+      <LineEvent side="left" title="Release Version 3.0" date="November, 2023">
         <Description>
           This is the current version on my website.  It reflects a grayscale color scheme
           to keep things simple on the eyes yet advanced and functional.
+        </Description>
+      </LineEvent>
+      <LineEvent side="right" title="Start Redesign for Version 3.0" date="November, 2023">
+        <Description>
+          With over a year of experience as a professional software engineer, I wanted to
+          switch up some of the colors in my site. I really liked the look of gradients in
+          sites, so that is the route I went.
+        </Description>
+      </LineEvent>
+
+      <LineEvent side="left" title="Release Version 2.0" date="July, 2022">
+        <Description>
+          Version 2 reflects a grayscale color scheme to keep things simple on
+          the eyes yet advanced and functional. V2 can be seen <Link id="hereLink" href="https://v2.nathanlauder.com">here</Link>.
         </Description>
       </LineEvent>
       <LineEvent side="right" title="Start Redesign for Version 2.0" date="May, 2022">
@@ -37,7 +50,7 @@ const History = () => (
       <LineEvent side="left" title="Release Version 1.0" date="">
         <Description>
           The very first version of my portfolio site. It is very bright with a design to match.
-          Version 1 can be seen <Link href="/v1">here</Link>.
+          Version 1 can be seen <Link id="hereLink" href="https://v1.nathanlauder.com">here</Link>.
         </Description>
       </LineEvent>
       <LineEvent side="right" title="Begin Design for Version 1.0" date="May, 2021">

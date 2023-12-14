@@ -1,17 +1,23 @@
-import styled from 'styled-components';
 import React from 'react';
-import { TextLoop } from 'react-text-loop-next';
+import styled from 'styled-components';
+// import { TextLoop } from 'react-text-loop-next';
 
 const Landing = () => (
   <Container id="landing">
-    <Headshot>
+    {/* <Headshot>
       <img src="imgs/2021HeadshotBW.png" alt="Nathan Lauder" />
-    </Headshot>
+    </Headshot> */}
     <Greeting>
-      Welcome!
-      <br />
-      I'm Nathan, and I'm a
-      <div id="loop">
+      <div id="welcome">Hi, my name is</div>
+      <div id="name">Nathan Lauder</div>
+      <div id="statement">I build software for the web.</div>
+
+      <div id="description">
+        I'm a software engineer with a great enthusiasm for
+        Web Development. Currently, I am focused on API
+        development at <span className="accent">JPMorgan Chase & Co.</span>
+      </div>
+      {/* <span id="loop">
         <TextLoop
           id="textLoop"
           interval={5000}
@@ -21,17 +27,18 @@ const Landing = () => (
             damping: 10
           }}
         >
-          <div>developer</div>
-          <div>problem solver</div>
-          <div>self-learner</div>
-          <div>forward thinker</div>
+          <div>UI Development</div>
+          <div>API Development</div>
+          <div>self teaching</div>
+          <div>development optimization</div>
         </TextLoop>
-      </div>
+      </span> */}
     </Greeting>
   </Container>
 );
 
 const Container = styled.div`
+  height: 96vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -45,24 +52,43 @@ const Container = styled.div`
   }
 `;
 
-const Headshot = styled.div`
-  margin: 1rem;
-  width: 30%;
-  img {
-    width: 100%;
-  }
+// const Headshot = styled.div`
+//   margin: 1rem;
+//   width: 30%;
+//   img {
+//     width: 100%;
+//   }
 
-  @media screen and (max-width: 600px) {
-    width: 50%;
-  }
-`;
+//   @media screen and (max-width: 600px) {
+//     width: 50%;
+//   }
+// `;
 
 const Greeting = styled.div`
-  font-size: 2rem;
-  text-align: right;
+  .accent {
+    color: var(--accent);
+  }
 
-  #loop div {
-    font-size: 2rem;
+  #description {
+    margin-top: 1rem;
+    width: 50%;
+    white-space: pre-wrap;
+  }
+
+  #welcome, #statement, #loop div {
+    font-size: 1.7rem;
+    color: rgba(250, 250, 250, 0.8);
+  }
+
+  #name {
+    color: var(--accent);
+    font-size: 4.5rem;
+    font-weight: bold;
+    margin: 0.75rem 0 0.75rem -0.5rem;
+  }
+
+  #statement {
+    margin-bottom: 0.125rem;
   }
 
   @media screen and (max-width: 1000px) {

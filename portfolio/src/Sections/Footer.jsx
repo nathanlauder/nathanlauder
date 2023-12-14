@@ -1,8 +1,8 @@
 import React from 'react';
-import styled from 'styled-components';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import SkewedContainer from 'sc-react';
+import styled from 'styled-components';
 import Link from '../Components/Link';
 import Tooltip from '../Components/Tooltip';
 
@@ -81,7 +81,7 @@ const Content = styled.div`
 
 const Footer = () => (
   <Container id="footer">
-    <SkewedContainer top="right" color="white" bgColor="black">
+    <SkewedContainer top="right" color="white" bgColor="var(--accent)">
       <Content id="content">
         <Connect>Elsewhere on the Web</Connect>
         <Icons>

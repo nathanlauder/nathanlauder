@@ -16,7 +16,7 @@ const ExperienceContainer = styled.div`
 `;
 
 const WorkContainer = styled.div`
-  background-color: ${({ bgColor }) => bgColor};
+  /* background-color: ${({ bgColor }) => bgColor}; */
   color: ${({ textColor }) => textColor};
   width: 50%;
 
@@ -44,7 +44,7 @@ const PositionDescription = styled.div`
 const Experience = () => (
   <Wrapper id="experience">
     <SkewedContainer
-      bgColor={colors.black}
+      bgColor={colors.accent}
       top="right"
       bottom="left"
       style={{ marginBottom: '1rem' }}
@@ -57,8 +57,8 @@ const Experience = () => (
           </WorkContainerTitle>
           <PositionTitle>Software Engineer - JPMorgan Chase &amp; Co.</PositionTitle>
           <PositionDescription>
-            At JPMorgan Chase, I work in Cooporate and Investment Banking aiding in the upkeep
-            of software.
+            At JPMorgan Chase, I work in Corporate and Investment Banking to develop software
+            for both internal and external clients.
           </PositionDescription>
         </WorkContainer>
         <WorkContainer bgColor={colors.black} textColor={colors.white}>

@@ -8,7 +8,7 @@ const TimeLine = styled.div`
     content: '';
     position: absolute;
     width: 6px;
-    background-color: black;
+    background-color: var(--white);
     border-radius: 4px;
     top: 0;
     bottom: 0;

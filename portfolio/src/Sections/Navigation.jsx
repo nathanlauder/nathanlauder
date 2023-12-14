@@ -17,7 +17,8 @@ const Container = styled.div`
 
 const Logo = styled.div`
   width: 2.3rem;
-  margin-left: 2rem;
+  padding: 0.5rem 2rem; // fixme should be margin-left: 2rem;
+  background-color: var(--accent);
   
   img {
     animation: spinLogo 4s infinite ease-in-out;
@@ -42,7 +43,7 @@ const Logo = styled.div`
 const Navigation = () => (
   <Container>
     <Logo>
-      <Link href="https://www.nathanlauder.com">
+      <Link href="https://nathanlauder.com">
         <img src="imgs/NLogo.png" alt="Logo" />
       </Link>
     </Logo>
