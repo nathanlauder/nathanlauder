@@ -69,6 +69,18 @@ const Projects = () => (
     <ProjectContainer>
       <ProjectCard>
         <ProjectTitle>
+          Go URL Shortener
+        </ProjectTitle>
+        <ProjectImageContainer>
+          <ProjectImage src="imgs/url-shortener.png" alt="Url Shortener UI" />
+        </ProjectImageContainer>
+        <ProjectDescription>
+          This is a highly efficient URL shortener using FastHTTP and Golang. This shortener
+          processed over 50,000 requests per second, and features a very simple React UI.
+        </ProjectDescription>
+      </ProjectCard>
+      <ProjectCard>
+        <ProjectTitle>
           TODO &amp; FIXME scanner.
         </ProjectTitle>
         <ProjectImageContainer>
@@ -90,19 +102,6 @@ const Projects = () => (
         <ProjectDescription>
           A ReactJS PWA built to provide four-year planning and registration
           to colleges to smooth the stress of registration season.
-        </ProjectDescription>
-      </ProjectCard>
-      <ProjectCard>
-        <ProjectTitle>
-          Go URL Shortener
-        </ProjectTitle>
-        <ProjectImageContainer>
-          <ProjectImage src="imgs/url-shortener.png" alt="Url Shortener UI" />
-        </ProjectImageContainer>
-        <ProjectDescription>
-          This is a project I collaborated with a fellow engineer on, and we made a highly
-          efficient URL shortener using FastHTTP and Golang. This shortener processed over
-          50,000 requests per second, and features a very simple React UI.
         </ProjectDescription>
       </ProjectCard>
     </ProjectContainer>
