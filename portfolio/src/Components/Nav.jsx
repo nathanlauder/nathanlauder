@@ -6,10 +6,10 @@ const Nav = styled.div`
 
   ${Link} {
     &:not(:last-child) {
-      border-right: 2px solid var(--black);
+      border-right: 2px solid var(--accent);
 
       &:hover {
-        border-right: 2px solid white;
+        border-right: 2px solid var(--accent);
       }
     }
     

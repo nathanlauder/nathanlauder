@@ -7,7 +7,7 @@ const SectionTitle = styled.div`
   letter-spacing: 2px;
   text-align: center;
   margin: ${({ margin }) => margin || '2rem'} 0;  
-  color: ${({ color }) => color || colors.black};  
+  color: ${({ color }) => color || colors.white};  
 `;
 
 export default SectionTitle;
