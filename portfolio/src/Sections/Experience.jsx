@@ -1,24 +1,35 @@
-import React from 'react';
+/* eslint-disable no-unused-vars */
+import React, { useState } from 'react';
 import styled from 'styled-components';
-import SkewedContainer from 'sc-react';
+import FeaturedPosition from '../Components/FeaturedPosition';
 import SectionTitle from '../Components/SectionTitle';
 import colors from '../util/colors';
+import positions from '../util/positions';
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 12rem;
+`;
+
+const PositionsContainer = styled.div``;
 
 const ExperienceContainer = styled.div`
   display: flex;
   text-align: center;
-
+  align-items: center;
+  margin-bottom: 1rem;
   @media screen and (max-width: 850px) {
     flex-direction: column;
   }
 `;
 
-const WorkContainer = styled.div`
-  /* background-color: ${({ bgColor }) => bgColor}; */
-  color: ${({ textColor }) => textColor};
-  width: 50%;
+const WorkContainer = styled.button`
+  text-align: left;
+  background-color: transparent;
+  border: none;
+  color: var(--white);
+  cursor: pointer;
 
   @media screen and (max-width: 850px) {
     width: 100%;
@@ -26,30 +37,46 @@ const WorkContainer = styled.div`
   }
 `;
 
-const WorkContainerTitle = styled.div`
-  font-size: 1.3rem;
-  font-weight: bold;
+const PositionTitle = styled.div`
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent);
 `;
 
-const PositionTitle = styled.div`
-  margin: 1rem 0;
-  font-size: 1rem;
-  font-weight: 700;
+const CompanyTitle = styled.div`
+  margin-bottom: 0.25rem;
 `;
 
 const PositionDescription = styled.div`
-  margin: 0 2rem;
+  max-width: 33%;
 `;
 
-const Experience = () => (
-  <Wrapper id="experience">
-    <SkewedContainer
+const FeaturedWrapper = styled.div`
+
+`;
+
+const Experience = () => {
+  const [featuredPositionActive, activateFeaturedPosition] = useState(false);
+  const [skillsList, setSkillsList] = useState(null);
+  const [positionDescription, setPositionDescription] = useState(null);
+
+  const featureNewPosition = (description, skills) => {
+    setPositionDescription(description);
+    setSkillsList(skills);
+    activateFeaturedPosition(true);
+  };
+
+  return (
+    <>
+      <SectionTitle color={colors.white}>Experience</SectionTitle>
+      <Wrapper id="experience">
+        {/* <SkewedContainer
       bgColor={colors.accent}
       top="right"
       bottom="left"
       style={{ marginBottom: '1rem' }}
     >
-      <SectionTitle color={colors.white} margin="1rem">Experience</SectionTitle>
       <ExperienceContainer>
         <WorkContainer bgColor={colors.black} textColor={colors.white}>
           <WorkContainerTitle>
@@ -73,8 +100,45 @@ const Experience = () => (
           </PositionDescription>
         </WorkContainer>
       </ExperienceContainer>
-    </SkewedContainer>
-  </Wrapper>
-);
+    </SkewedContainer> */}
+        <PositionsContainer>
+          <ExperienceContainer>
+            <WorkContainer
+              onClick={() => featureNewPosition(positions.jpmc.description, positions.jpmc.skills)}
+            >
+              <PositionTitle>Software Engineer</PositionTitle>
+              <CompanyTitle>JPMorgan Chase & Co.</CompanyTitle>
+            </WorkContainer>
+          </ExperienceContainer>
+          <ExperienceContainer>
+            <WorkContainer
+              onClick={() => featureNewPosition(positions.dmsi.description, positions.dmsi.skills)}
+            >
+              <PositionTitle>Software Engineer Intern</PositionTitle>
+              <CompanyTitle>DMSi Software</CompanyTitle>
+            </WorkContainer>
+          </ExperienceContainer>
+          <ExperienceContainer>
+            <WorkContainer
+              onClick={() => featureNewPosition(positions.gehc.description, positions.gehc.skills)}
+            >
+              <PositionTitle>Software Engineer Intern</PositionTitle>
+              <CompanyTitle>General Electric Healthcare</CompanyTitle>
+            </WorkContainer>
+          </ExperienceContainer>
+        </PositionsContainer>
+        { featuredPositionActive && (
+          <FeaturedWrapper>
+            <FeaturedPosition
+              description={positionDescription}
+              skills={skillsList}
+              closeFeature={() => activateFeaturedPosition(false)}
+            />
+          </FeaturedWrapper>
+        )}
+      </Wrapper>
+    </>
+  );
+};
 
 export default Experience;
