@@ -48,7 +48,7 @@ const CloseButton = styled.button`
   }
 `;
 
-const FeaturedPosition = ({ description, skills }) => (
+const FeaturedPosition = ({ description, skills, closeFeature }) => (
   <Wrapper>
     <Description>
       {description}
@@ -58,7 +58,7 @@ const FeaturedPosition = ({ description, skills }) => (
         <Pill key={skill}>{skill}</Pill>
       ))}
     </PillCaddy>
-    <CloseButton onClick={() => console.log('closing')}>
+    <CloseButton onClick={closeFeature}>
       <IoIosClose />
     </CloseButton>
   </Wrapper>
@@ -66,7 +66,8 @@ const FeaturedPosition = ({ description, skills }) => (
 
 FeaturedPosition.propTypes = {
   description: PropTypes.string.isRequired,
-  skills: PropTypes.arrayOf(PropTypes.string).isRequired
+  skills: PropTypes.arrayOf(PropTypes.string).isRequired,
+  closeFeature: PropTypes.func.isRequired
 };
 
 export default FeaturedPosition;
