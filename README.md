@@ -1,7 +1,7 @@
 Hey 👋🏼 I'm Nathan
 =======================
 
-I am a Software Engineer working on modernization efforts at JPMorgan Chase
+I am a Software Engineer working at [Kognitive Edge](https://kognitivedge.com).
 
 * 🖥️  See my portfolio at [nathanlauder.com](http://nathanlauder.com)
 * 🧠  I'm learning Rust
