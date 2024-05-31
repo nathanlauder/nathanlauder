@@ -6,7 +6,7 @@ I am a Software Engineer working at [Kognitive Edge](https://kognitivedge.com).
 * 🖥️  See my portfolio at [nathanlauder.com](http://nathanlauder.com)
 * 🧠  I'm learning Rust
 * 🤝  I'm open to collaborating on anything API related
-* ⚡  My VSCode is cooler than yours
+* ⚡  My Vim is cooler than yours
 
 <a href="https://www.github.com/nathanlauder" target="_blank" rel="noreferrer"><img
 src="https://img.shields.io/github/followers/nathanlauder?logo=github&style=for-the-badge&color=00b50c&labelColor=0f172a" /></a>
