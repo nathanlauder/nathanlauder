@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import SkewedContainer from 'sc-react';
 import SectionTitle from '../Components/SectionTitle';
 import colors from '../util/colors';
 
@@ -43,37 +42,32 @@ const PositionDescription = styled.div`
 
 const Experience = () => (
   <Wrapper id="experience">
-    <SkewedContainer
-      bgColor={colors.black}
-      top="right"
-      bottom="left"
-      style={{ marginBottom: '1rem' }}
-    >
+    <div style={{ backgroundColor: colors.black, padding: '1rem' }}>
       <SectionTitle color={colors.white} margin="1rem">Experience</SectionTitle>
       <ExperienceContainer>
         <WorkContainer bgColor={colors.black} textColor={colors.white}>
           <WorkContainerTitle>
             Current Position
           </WorkContainerTitle>
-          <PositionTitle>Software Engineer - JPMorgan Chase &amp; Co.</PositionTitle>
+          <PositionTitle>Software Engineer - Kognitiv Edge</PositionTitle>
           <PositionDescription>
-            At JPMorgan Chase, I work in Cooporate and Investment Banking aiding in the upkeep
-            of software.
+            At Kognitiv Edge, I write software to transform the defense industry. In
+            conjunction with my team, I found the most cost effective implementations
+            to work in the Defense space.
           </PositionDescription>
         </WorkContainer>
         <WorkContainer bgColor={colors.black} textColor={colors.white}>
           <WorkContainerTitle>
             Previous Position
           </WorkContainerTitle>
-          <PositionTitle>Software Engineer Intern - DMSi Software</PositionTitle>
+          <PositionTitle>Associate Software Engineer - JPMorgan Chase &amp; Co.</PositionTitle>
           <PositionDescription>
-            At DMSi, I worked with a team in an effort to migrate a legacy Windows application
-            to the web.  During this time, I leveraged my knowledge of React while learning a
-            little bit of Go.
+            At JPMorgan Chase, I worked in Cooporate and Investment Banking aiding in the upkeep
+            of software.
           </PositionDescription>
         </WorkContainer>
       </ExperienceContainer>
-    </SkewedContainer>
+    </div>
   </Wrapper>
 );
 

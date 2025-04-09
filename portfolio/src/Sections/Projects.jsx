@@ -69,15 +69,26 @@ const Projects = () => (
     <ProjectContainer>
       <ProjectCard>
         <ProjectTitle>
-          TODO &amp; FIXME scanner.
+          Password Manager CLI
         </ProjectTitle>
         <ProjectImageContainer>
           <ProjectImage src="imgs/github.jpeg" alt="image of code" />
         </ProjectImageContainer>
         <ProjectDescription>
-          This is something I am working on which
-          scans a project directory for any TODO/FIXME lines and creates
-          a list of all of them within the project.
+          This is a tool which operates as a password manager but specifically on a single device.
+          It creates and manages passwords in a local database under a master password.
+        </ProjectDescription>
+      </ProjectCard>
+      <ProjectCard>
+        <ProjectTitle>
+          Python Facial Recognition System
+        </ProjectTitle>
+        <ProjectImageContainer>
+          <ProjectImage src="imgs/facialrec.jpg" alt="Facial Recognition Image" />
+        </ProjectImageContainer>
+        <ProjectDescription>
+          This is a Python tool which recognizes faces in real-time video. It uses the OpenCV
+          classifier. This classifier was trained on images and then tested using on-device cameras.
         </ProjectDescription>
       </ProjectCard>
       <ProjectCard>
@@ -85,24 +96,11 @@ const Projects = () => (
           4-year Plan &amp; Registration System
         </ProjectTitle>
         <ProjectImageContainer>
-          <ProjectImage src="imgs/library.jpg" alt="battleship" />
+          <ProjectImage src="imgs/library.jpg" alt="Library Image" />
         </ProjectImageContainer>
         <ProjectDescription>
           A ReactJS PWA built to provide four-year planning and registration
           to colleges to smooth the stress of registration season.
-        </ProjectDescription>
-      </ProjectCard>
-      <ProjectCard>
-        <ProjectTitle>
-          Battleship Solver
-        </ProjectTitle>
-        <ProjectImageContainer>
-          <ProjectImage src="imgs/battleship1.jpg" alt="battleship" />
-        </ProjectImageContainer>
-        <ProjectDescription>
-          A battleship board solver (the old school newspaper version)
-          which utilizes recursive backtracking to find all possible solutions
-          to a battleship puzzle.
         </ProjectDescription>
       </ProjectCard>
     </ProjectContainer>
