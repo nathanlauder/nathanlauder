@@ -4,8 +4,6 @@ Hey 👋🏼 I'm Nathan
 I am a Software Engineer working at [Kognitiv Edge](https://kognitivedge.com).
 
 * 🖥️  See my portfolio at [nathanlauder.com](http://nathanlauder.com)
-* 🧠  I'm learning Rust
-* 🤝  I'm open to collaborating on anything API related
 * ⚡  My Vim is cooler than yours
 
 <a href="https://www.github.com/nathanlauder" target="_blank" rel="noreferrer"><img
@@ -38,8 +36,5 @@ src="https://img.shields.io/github/followers/nathanlauder?logo=github&style=for-
 <p align="left"> <a href="https://www.github.com/nathanlauder" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/github-dark.svg" width="32" height="32" /></a> <a href="https://www.linkedin.com/in/nlauder" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" width="32" height="32" /></a></p>
 
 ### My GitHub Stats
----
-
-<a href="http://www.github.com/nathanlauder"><img src="https://github-readme-stats.vercel.app/api?username=nathanlauder&show_icons=true&hide=stars,issues,&count_private=true&title_color=ffffff&show_icons=true&hide_border=true&bg_color=45,00b50c,000000&ffffff=000000&text_color=ffffff&icon_color=ffffff" alt="nathanlauder's GitHub stats" /></a>
 
 <a href="https://github.com/nathanlauder" align="left"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nathanlauder&langs_count=8&title_color=ffffff&text_color=ffffff&icon_color=ec4899&bg_color=45,00b50c,000000&ffffff&hide_border=true&locale=en&custom_title=Top%20%Languages&layout=compact&exclude_repo=dots,SoftwareEngineering,NALPWA00,PWA00NAL,Travlr,Reef,Covid-19-Grapher,nathanlauder.github.io" alt="Top Languages" /></a>
