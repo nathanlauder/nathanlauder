@@ -23,7 +23,8 @@ const Landing = () => (
         >
           <div>developer</div>
           <div>problem solver</div>
-          <div>self-learner</div>
+          <div>lifelong learner</div>
+          <div>self-starter</div>
           <div>forward thinker</div>
         </TextLoop>
       </div>

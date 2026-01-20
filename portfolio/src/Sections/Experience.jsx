@@ -49,11 +49,12 @@ const Experience = () => (
           <WorkContainerTitle>
             Current Position
           </WorkContainerTitle>
-          <PositionTitle>Software Engineer - Kognitiv Edge</PositionTitle>
+          <PositionTitle>Technical Lead - Kognitiv Edge</PositionTitle>
           <PositionDescription>
-            At Kognitiv Edge, I write software to transform the defense industry. In
-            conjunction with my team, I found the most cost effective implementations
-            to work in the Defense space.
+            At Kognitiv Edge, I lead software teams in partnership with clients to drive
+            technological transformation across the defense industry. Working closely
+            with my team, I deliver cost-effective, mission-aligned solutions tailored
+            to complex operational and security requirements.
           </PositionDescription>
         </WorkContainer>
         <WorkContainer bgColor={colors.black} textColor={colors.white}>
@@ -62,8 +63,8 @@ const Experience = () => (
           </WorkContainerTitle>
           <PositionTitle>Associate Software Engineer - JPMorgan Chase &amp; Co.</PositionTitle>
           <PositionDescription>
-            At JPMorgan Chase, I worked in Cooporate and Investment Banking aiding in the upkeep
-            of software.
+            At JPMorgan Chase, I worked in Cooporate and Investment Banking implementing
+            modern Rest APIs and creating advanced data migration pipelines.
           </PositionDescription>
         </WorkContainer>
       </ExperienceContainer>

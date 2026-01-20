@@ -37,7 +37,7 @@ const History = () => (
       <LineEvent side="left" title="Release Version 1.0" date="">
         <Description>
           The very first version of my portfolio site. It is very bright with a design to match.
-          Version 1 can be seen <Link href="/v1">here</Link>.
+          Version 1 can be seen <Link href="https://v1.nathanlauder.com">here</Link>.
         </Description>
       </LineEvent>
       <LineEvent side="right" title="Begin Design for Version 1.0" date="May, 2021">
