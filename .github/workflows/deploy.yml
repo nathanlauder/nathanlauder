@@ -1,0 +1,53 @@
+name: Deploy Errything
+
+on:
+  push:
+    # branches:
+    #   - master
+  workflow_dispatch:
+
+jobs:
+  build_deploy_ui:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: portfolio/
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "lts/*"
+      - name: Install Dependencies
+        run: npm ci
+        run: npm run build
+      - name: Setup AWS Credentials
+        id: aws-creds
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_SECRET_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_KEY }}
+          aws-region: us-east-2
+      - name: Sync S3 to Build
+        run: aws s3 sync dist/ 's3://${{ secrets.S3_BUCKET_NAME }}'
+      - name: Set deployment output based on branch
+        id: env
+        run: |
+          # Get the current branch name
+          BRANCH_NAME=$(basename "${GITHUB_REF}")
+
+          # Check if the branch is 'master' and set the appropriate output
+          if [[ "$BRANCH_NAME" == "master" ]]; then
+            echo "BRANCH=published" >> $GITHUB_OUTPUT
+          else
+            echo "BRANCH=staging" >> $GITHUB_OUTPUT
+          fi
+      - name: Deploy Amplify
+        run: |
+          echo "Publishing UI to ${{ steps.env.outputs.BRANCH }}"
+          aws amplify start-deployment \
+            --app-id ${{ secrets.AMPLIFY_APP_ID }} \
+            --branch-name ${{ steps.env.outputs.BRANCH }} \
+            --source-url "s3://nathanlauder-portfolio/" \
+            --source-url-type "BUCKET_PREFIX"
