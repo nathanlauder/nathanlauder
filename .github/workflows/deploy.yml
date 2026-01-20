@@ -31,7 +31,7 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_KEY }}
           aws-region: us-east-2
       - name: Sync S3 to Build
-        run: aws s3 sync dist/ 's3://${{ secrets.S3_BUCKET_NAME }}'
+        run: aws s3 sync build/ 's3://${{ secrets.S3_BUCKET_NAME }}'
       - name: Set deployment output based on branch
         id: env
         run: |
@@ -50,5 +50,5 @@ jobs:
           aws amplify start-deployment \
             --app-id ${{ secrets.AMPLIFY_APP_ID }} \
             --branch-name ${{ steps.env.outputs.BRANCH }} \
-            --source-url "s3://nathanlauder-portfolio/" \
+            --source-url "${{ secrets.S3_BUCKET_NAME }}" \
             --source-url-type "BUCKET_PREFIX"
